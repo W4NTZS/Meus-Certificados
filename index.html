@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags para evitar indexação no Google (Garante a privacidade pelo link) -->
+    <meta name="robots" content="noindex, nofollow">
+    <title>Portfólio de Certificados</title>
+    <style>
+        :root {
+            --bg-principal: #0d1117;
+            --bg-card: #161b22;
+            --azul-destaque: #58a6ff;
+            --azul-hover: #1f6feb;
+            --texto-claro: #c9d1d9;
+            --texto-escuro: #8b949e;
+            --borda: #30363d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-principal);
+            color: var(--texto-claro);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 3rem 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            flex: 1;
+        }
+
+        /* Seção de Introdução Pessoal */
+        .perfil-intro {
+            background-color: var(--bg-card);
+            border: 1px solid var(--borda);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 3.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .perfil-intro h1 {
+            color: #ffffff;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .perfil-intro h1 span {
+            color: var(--azul-destaque);
+        }
+
+        .perfil-intro p {
+            color: var(--texto-claro);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .perfil-detalhes {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            color: var(--texto-escuro);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--borda);
+            padding-top: 1.2rem;
+        }
+
+        .perfil-detalhes span strong {
+            color: var(--azul-destaque);
+        }
+
+        /* Seção de Certificados */
+        .secao-titulo {
+            font-size: 1.6rem;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            padding-left: 0.5rem;
+            border-left: 4px solid var(--azul-destaque);
+        }
+
+        .grid-certificados {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--borda);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--azul-destaque);
+        }
+
+        .card-info h3 {
+            color: #ffffff;
+            font-size: 1.15rem;
+            margin-bottom: 0.6rem;
+            line-height: 1.4;
+        }
+
+        .card-info .instituicao {
+            color: var(--azul-destaque);
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .card-info .data {
+            color: var(--texto-escuro);
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-visualizar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            color: var(--azul-destaque);
+            border: 1px solid var(--azul-destaque);
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .btn-visualizar:hover {
+            background-color: var(--azul-destaque);
+            color: var(--bg-principal);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 5rem;
+            color: var(--texto-escuro);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- INTRODUÇÃO PROFISSIONAL -->
+        <section class="perfil-intro">
+            <h1>Olá, eu sou o <span>Lucas Barbosa Alves</span></h1>
+            <p>
+                Seja bem-vindo ao meu repositório de certificações. Sou estudante de <strong>Análise e Desenvolvimento de Sistemas na Fatec</strong> e focado em construir soluções robustas e eficientes. Busco evolução constante na área de tecnologia, combinando fundamentos sólidos de engenharia de software com as ferramentas mais modernas do mercado.
+            </p>
+            <p>
+                Abaixo você encontrará os registros formais da minha trajetória de aprendizado, cobrindo proficiência em idiomas, aplicação de inteligência artificial no desenvolvimento e, principalmente, meu progresso em arquitetura de software e ecossistemas de programação.
+            </p>
+            <div class="perfil-detalhes">
+                <span>📍 Localização: <strong>Bertioga - SP</strong></span>
+                <span>🎓 Foco Atual: <strong>Desenvolvimento Backend</strong></span>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DOS CARDS -->
+        <h2 class="secao-titulo">Certificações Cadastradas</h2>
+        
+        <main class="grid-certificados">
+            
+
+            <!-- CARD 1: INGLÊS DISCOVER -->
+            <div class="card">
+                <div class="card-info">
+                    <h3>Certificado de Inglês Avançado</h3>
+                    <p class="instituicao">Discover</p>
+                    <p class="data">Concluído em: [Mês/Ano]</p>
+                </div>
+                <a href="certificados/ingles_discover.pdf" target="_blank" class="btn-visualizar">Visualizar PDF</a>
+            </div>
+
+            <!-- CARD 2: BootCamp Santander 2026 -->
+            <div class="card">
+                <div class="card-info">
+                    <h3>BootCamp Santander 2026</h3>
+                    <p class="instituicao">Santander & DIO</p>
+                    <p class="data">Concluído em: [Mês/Ano]</p>
+                </div>
+                <a href="certificados/BootCampSantander2026.pdf" target="_blank" class="btn-visualizar">Visualizar PDF</a>
+            </div>
+
+            <!-- CARD 3: Fundamentos de IA Moderna: Machine Learning, LLMs, IA Generativa e Agentes -->
+            <div class="card">
+                <div class="card-info">
+                    <h3>Fundamentos de IA Moderna: Machine Learning, LLMs, IA Generativa e Agentes</h3>
+                    <p class="instituicao">DIO</p>
+                    <p class="data">Concluído em: [Mês/Ano]</p>
+                </div>
+                <a href="certificados/FundamentosdeIAModerna.pdf" target="_blank" class="btn-visualizar">Visualizar PDF</a>
+            </div>
+
+            <!-- CARD 4: Introdução à Engenharia de Prompts -->
+            <div class="card">
+                <div class="card-info">
+                    <h3>Introdução à Engenharia de Prompts</h3>
+                    <p class="instituicao">DIO</p>
+                    <p class="data">Concluído em: [Mês/Ano]</p>
+                </div>
+                <a href="certificados/IntroducaoEngenhariadePrompts.pdf" target="_blank" class="btn-visualizar">Visualizar PDF</a>
+            </div>
+
+            <!-- CARD 5: Copilotos com IA no Desenvolvimento de Soluções -->
+            <div class="card">
+                <div class="card-info">
+                    <h3>Copilotos com IA no Desenvolvimento de Soluções</h3>
+                    <p class="instituicao">DIO</p>
+                    <p class="data">Concluído em: [Mês/Ano]</p>
+                </div>
+                <a href="certificados/CopilotoscomIAnoDesenvolvimentodeSolucoes.pdf" target="_blank" class="btn-visualizar">Visualizar PDF</a>
+            </div>
+
+
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Acesso restrito via link direto.</p>
+    </footer>
+
+</body>
+</html>
